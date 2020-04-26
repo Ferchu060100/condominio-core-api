@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "xcGr3vnA9iKuOw5anPLWkmkUYxFULHB0xtCVHee9cwKpENmQIY5TyQdo75DrpDiwnPIEyJdCZoM3qXJT0WKnsw==",
+  "dgSpecHash": "9MmPEau+DAnVwxC0Pz6DVMWNAZ8i6+wZQ1Liwg+bMertOOco05BAkfJQUy/zw9OZxYMPAwBYf0C87Yw3mF2bgA==",
   "success": true,
-  "projectFilePath": "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones para dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj",
+  "projectFilePath": "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones para dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio.core.api.csproj",
   "expectedPackageFiles": [
     "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.hosting.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.abstractions.2.2.0.nupkg.sha512",
     "c:\\program files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.aspnetcore.hosting.server.abstractions\\2.2.0\\microsoft.aspnetcore.hosting.server.abstractions.2.2.0.nupkg.sha512",

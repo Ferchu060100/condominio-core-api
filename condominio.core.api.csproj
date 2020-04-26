@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>condominio_core_api</RootNamespace>
+    <AssemblyName>condominio.core.api</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
