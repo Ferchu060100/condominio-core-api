@@ -16,7 +16,7 @@ jobs:
         HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
         APP_NAME: ${{ 'condominio-api060100' }}
       run: |
-        cd ./ASPNetCoreLabs/HerokuContainer
+        cd ./condominio-core-api
         docker login --username=ferchu060100 --password=$HEROKU_API_KEY registry.heroku.com
         heroku container:push web -a condominio-api060100
         heroku container:release web -a condominio-api060100
