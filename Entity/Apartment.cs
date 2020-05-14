@@ -14,7 +14,5 @@ namespace condominio_core_api.Entity
         public string Description { get; set; }
         public int ProjectId { get; set; }
         public Project Project { get; set; }
-        public int UserId { get; set; }
-        public User User { get; set; }
     }
 }
