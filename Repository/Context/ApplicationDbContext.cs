@@ -15,6 +15,7 @@ namespace condominio_core_api.Repository.Context
         public DbSet<ApartmentFile> ApartmentFiles { get; set; }
         public DbSet<ProjectFile> ProjectFiles { get; set; }
         public DbSet<CompanyService> Services { get; set; }
+        public DbSet<User> Users { get; set; }
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
           : base(options)
         {

@@ -151,4 +151,3 @@ E:\ING DE SOFTWARE\2020-01\Aplicaciones para dispositivos moviles\Api-Condominio
 E:\ING DE SOFTWARE\2020-01\Aplicaciones para dispositivos moviles\Api-Condominio\condominio-core-api\condominio-core-api\obj\Debug\netcoreapp3.1\condominio.core.api.dll
 E:\ING DE SOFTWARE\2020-01\Aplicaciones para dispositivos moviles\Api-Condominio\condominio-core-api\condominio-core-api\obj\Debug\netcoreapp3.1\condominio.core.api.pdb
 E:\ING DE SOFTWARE\2020-01\Aplicaciones para dispositivos moviles\Api-Condominio\condominio-core-api\condominio-core-api\obj\Debug\netcoreapp3.1\condominio-core-api.genruntimeconfig.cache
-E:\ING DE SOFTWARE\2020-01\Aplicaciones para dispositivos moviles\Api-Condominio\condominio-core-api\condominio-core-api\obj\Debug\netcoreapp3.1\condominio-core-api.csprojAssemblyReference.cache
