@@ -5,56 +5,54 @@ using System.Threading.Tasks;
 using condominio_core_api.Entity;
 using condominio_core_api.Service;
 using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace condominio_core_api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class UserController : ControllerBase
+    public class ProjectController : ControllerBase
     {
-        private IUserService userService;
+        private IProjectService projectService;
 
-        public UserController(IUserService userService)
+        public ProjectController(IProjectService projectService)
         {
-            this.userService = userService;
+            this.projectService = projectService;
         }
 
-        // GET: api/User
+        // GET: api/Project
         [HttpGet]
         public ActionResult Get()
         {
-            return Ok(userService.GetAll());
+            return Ok(projectService.GetAll());
         }
-        // GET: api/User/5
+
+        // GET: api/Project/5
         [HttpGet("{id}")]
         public ActionResult Get(int id)
         {
-            return Ok(userService.Get(id));
+            return Ok(projectService.Get(id));
         }
 
-
-
-        // POST: api/User
+        // POST: api/Project
         [HttpPost]
-        public ActionResult Post([FromBody] User user)
+        public ActionResult Post([FromBody] Project project)
         {
-            return Ok(userService.Save(user));
+            return Ok(projectService.Save(project));
         }
 
-        // PUT: api/User/5
+        // PUT: api/Project/5
         [HttpPut("{id}")]
-        public ActionResult Put([FromBody] User user)
+        public ActionResult Put( [FromBody] Project project)
         {
-            return Ok(userService.Update(user));
+            return Ok(projectService.Update(project));
         }
 
         // DELETE: api/ApiWithActions/5
         [HttpDelete("{id}")]
         public ActionResult Delete(int id)
         {
-            return Ok(userService.Delete(id));
+            return Ok(projectService.Delete(id));
         }
     }
 }

@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace condominio_core_api.Repository.Implementation
 {
-    public class UserRepository : IUserRepository
+    public class ProjectFileRepository : IProjectFileRepository
     {
         private ApplicationDbContext context;
 
-        public UserRepository(ApplicationDbContext context)
+        public ProjectFileRepository(ApplicationDbContext context)
         {
             this.context = context;
         }
@@ -21,7 +21,7 @@ namespace condominio_core_api.Repository.Implementation
         {
             try
             {
-                context.Entry(new User { Id = id }).State = EntityState.Deleted;
+                context.Entry(new ProjectFile { Id = id }).State = EntityState.Deleted;
                 context.SaveChanges();
             }
             catch (System.Exception)
@@ -29,57 +29,57 @@ namespace condominio_core_api.Repository.Implementation
                 return false;
             }
             return true;
-
         }
 
-        public User Get(int id)
+        public ProjectFile Get(int id)
         {
-            var result = new User();
-            try {
-                result = context.Users.Single(x => x.Id == id);
-            } catch
-            {
-                throw;
-            }
-            return result;
-
-        }
-
-        public IEnumerable<User> GetAll()
-        {
-            var result = new List<User>();
+            var result = new ProjectFile();
             try
             {
-                result = context.Users.ToList();
+                result = context.ProjectFiles.Single(x => x.Id == id);
             }
             catch (Exception)
             {
-
                 throw;
             }
             return result;
         }
 
-        public User GetbyEmail(string email)
+        public IEnumerable<ProjectFile> GetAll()
         {
-            var result = new User();
+            var result = new List<ProjectFile>();
             try
             {
-                result = context.Users.Single(x => x.Email == email);
+                result = context.ProjectFiles.ToList();
             }
-            catch
+            catch (Exception)
             {
                 throw;
             }
             return result;
         }
 
-        public bool Save(User entity)
+        public IEnumerable<ProjectFile> GetProjectFilesByProject(int Projectid)
+        {
+            var result = new List<ProjectFile>();
+            try
+            {
+                result = context.ProjectFiles.Where(x => x.ProjectId == Projectid).ToList();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return result;
+        }
+
+        public bool Save(ProjectFile entity)
         {
             try
             {
-                context.Users.Add(entity);
+                context.ProjectFiles.Add(entity);
                 context.SaveChanges();
+
             }
             catch (System.Exception)
             {
@@ -88,7 +88,7 @@ namespace condominio_core_api.Repository.Implementation
             return true;
         }
 
-        public bool Update(User entity)
+        public bool Update(ProjectFile entity)
         {
             try
             {

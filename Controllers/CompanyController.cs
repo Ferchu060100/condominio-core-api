@@ -29,10 +29,10 @@ namespace condominio_core_api.Controllers
         }
 
         // GET: api/Company/5
-        [HttpGet("{id}", Name = "Get")]
-        public string Get(int id)
+        [HttpGet("{id}")]
+        public ActionResult Get(int id)
         {
-            return "value";
+            return Ok(companyService.Get(id));
         }
 
         // POST: api/Company
