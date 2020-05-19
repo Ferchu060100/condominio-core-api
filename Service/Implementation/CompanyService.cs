@@ -36,9 +36,13 @@ namespace condominio_core_api.Service.Implementation
             return companyRepository.Save(entity);
         }
 
+  
+
         public bool Update(Company entity)
         {
             return companyRepository.Update(entity);
         }
+
+ 
     }
 }

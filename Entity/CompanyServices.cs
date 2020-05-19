@@ -5,7 +5,7 @@ using System.Text;
 
 namespace condominio_core_api.Entity
 {
-    public class CompanyService
+    public class CompanyServices
     {
         [Key]
         public int Id { get; set; }
