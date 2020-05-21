@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Routing.Constraints;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Text;
@@ -16,5 +17,7 @@ namespace condominio_core_api.Entity
         public string Description { get; set; }
         [MaxLength(200)]
         public string CompanyLogo { get; set; }
+        public float Latitude { get; set; }
+        public float Longitude { get; set; }
     }
 }

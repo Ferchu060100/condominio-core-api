@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones para dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj": {}
+    "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones_para_dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj": {}
   },
   "projects": {
-    "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones para dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj": {
+    "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones_para_dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones para dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj",
+        "projectUniqueName": "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones_para_dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj",
         "projectName": "condominio.core.api",
-        "projectPath": "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones para dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj",
+        "projectPath": "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones_para_dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\condominio-core-api.csproj",
         "packagesPath": "F:\\Users\\conde\\.nuget\\packages\\",
-        "outputPath": "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones para dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\obj\\",
+        "outputPath": "E:\\ING DE SOFTWARE\\2020-01\\Aplicaciones_para_dispositivos moviles\\Api-Condominio\\condominio-core-api\\condominio-core-api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "F:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
