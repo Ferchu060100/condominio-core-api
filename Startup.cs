@@ -56,7 +56,8 @@ namespace condominio_core_api
             services.AddTransient<IProjectFileService, ProjectFileService>();
             services.AddTransient<IApartmentRepository, ApartmentRepository>();
             services.AddTransient<IApartmentService, ApartmentService>();
-           
+            services.AddTransient<IApartmentFileRepository, ApartmentFileRepository>();
+            services.AddTransient<IApartmentFileService, ApartmentFileService>();
 
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen(c =>
