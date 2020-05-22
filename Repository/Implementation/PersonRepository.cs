@@ -1,5 +1,6 @@
 ﻿using condominio_core_api.Entity;
 using condominio_core_api.Repository.Context;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -51,7 +52,17 @@ namespace condominio_core_api.Repository.Implementation
             var result = new List<Person>();
             try
             {
+                /* result = context.People.Include(c => c.User).ToList();*/
                 result = context.People.ToList();
+               /* result.Select(c => new Person
+                {
+                    Id = c.Id,
+                    UserId = c.UserId,
+                    FirstName = c.FirstName,
+                    LastName = c.LastName,
+                    ShortName = c.ShortName,
+                    IdentificationNumber = c.IdentificationNumber,
+                });*/
             }
             catch (Exception)
             {

@@ -13,7 +13,6 @@ namespace condominio_core_api.Entity
         public string Email { get; set; }
         public Person Person { get; set; }
         public string Password { get; set; }
-        public int IdentificationNumber { get; set; }
         public string Role { get; set; }
     }
 }
