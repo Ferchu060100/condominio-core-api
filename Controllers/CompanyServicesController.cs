@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using condominio_core_api.Dto;
 using condominio_core_api.Entity;
 using condominio_core_api.Service.Implementation;
 using Microsoft.AspNetCore.Http;
@@ -21,10 +22,17 @@ namespace condominio_core_api.Controllers
         }
 
 
-        // GET: api/CompanyServices
+        // GET: api/CompanyServices/
         [HttpGet]
-        public ActionResult Get()
+        public ActionResult Get([FromQuery] CompanyServiceQueryParams queryParams)
         {
+            if (!string.IsNullOrEmpty(queryParams.District))
+            {
+                return Ok(companyserviceService.GetCompanyServicesByDistrict(queryParams.District));
+            }else if (!string.IsNullOrEmpty(queryParams.Department))
+            {
+                return Ok(companyserviceService.GetCompanyServicesByDepartment(queryParams.Department));
+            }
             return Ok(companyserviceService.GetAll());
         }
 

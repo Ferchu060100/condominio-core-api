@@ -15,6 +15,7 @@ namespace condominio_core_api.Entity
         public string Type { get; set; }
         public string Department { get; set; }
         public string District { get; set; }
+        public string Province { get; set; }
         public float Latitude { get; set; }
         public float Longitude { get; set; }
         public int UserId { get; set; }

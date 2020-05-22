@@ -11,8 +11,8 @@ namespace condominio_core_api.Entity
         public int Id { get; set; }
         public string Name { get; set; }
         public string Address { get; set; }
+        public string Department { get; set; }
         public string District { get; set; }
-        public string Province { get; set; }
         public bool State { get; set; }
         public string Type { get; set; }
         public string Benefits { get; set; }
@@ -21,5 +21,7 @@ namespace condominio_core_api.Entity
         public int UserId { get; set; }
         public User User { get; set; }
         public string ProjectLogo { get; set; }
+        public float Latitude { get; set; }
+        public float Longitude { get; set; }
     }
 }
